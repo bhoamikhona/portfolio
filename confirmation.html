@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You!</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <style>
+      body {
+        align-items: center;
+      }
+      .main {
+        /* width: 29%; */
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 5rem;
+      }
+
+      .email-img-container {
+        height: 10rem;
+      }
+
+      .email-img {
+        height: 10rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <div class="email-img-container">
+        <img
+          class="email-img floating"
+          src="./assets/images/email.svg"
+          alt="email graphic image"
+        />
+      </div>
+      <h1 class="h-xl thank-you">Thank You</h1>
+      <p>Thank you for connecting, I will get back to you shortly. Cheers!</p>
+      <form action="/confirmation" method="POST">
+        <button type="submit" class="form--btn form--btn__solid">Home</button>
+      </form>
+    </main>
+  </body>
+</html>
